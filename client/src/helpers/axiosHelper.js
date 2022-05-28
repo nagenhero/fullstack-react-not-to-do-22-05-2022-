@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const taskApiEp = process.env.NODE_ENV==='production'? "/api/v1/tasks" : "http://localhost:8000/api/v1/tasks";
+const taskApiEp = process.env.NODE_ENV=== 'production' ? "/api/v1/tasks" : "http://localhost:8000/api/v1/tasks";
 //const taskApiEp = "/api/v1/tasks";
 export const postTask = async (taskObj) => {
   try {
